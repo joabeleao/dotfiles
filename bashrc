@@ -52,7 +52,11 @@ export TERM=xterm-256color
 # source ~/gruvbox_powerline.sh # powerline
 
 # :: starship shell prompt ::
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
+# export STARSHIP_CONFIG=~/.config/starship.toml
+
+# :: oh-my-posh shell prompt
+eval "$(oh-my-posh --init --shell bash --config ~/.config/omp-princess.json)"
 
 # :: tmux ::
 # tmux -f ~/.tmux/tmux.conf
