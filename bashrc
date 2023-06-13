@@ -47,10 +47,13 @@ export TERM=xterm-256color
 # simple terminal colors
 #export PS1="$(tput bold)$(tput setaf 2)\u$(tput bold)$(tput setaf 1)@\h:$(tput bold)$(tput setaf 4)[\w] $(tput sgr0)"
 
-# gruvbox sh
-#source ~/gruvbox.sh
-source ~/gruvbox_powerline.sh
+# :: gruvbox shell prompt ::
+# source ~/gruvbox.sh # vanilla
+# source ~/gruvbox_powerline.sh # powerline
 
-# in case starting tmux rotb
-#tmux -f ~/.tmux/tmux.conf
-#clear
+# :: starship shell prompt ::
+eval "$(starship init bash)"
+
+# :: tmux ::
+# tmux -f ~/.tmux/tmux.conf
+# clear
