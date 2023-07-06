@@ -10,7 +10,7 @@ esac
 
 # Path settings
 FLAT="$HOME/.var/app"
-PATH="$PATH:$HOME/dev:$HOME/.var/:$FLAT"
+PATH="$PATH:$HOME/dev:/opt/:/opt/pycharm-community-2023.1.3/lib/:$HOME/.var/:$FLAT"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -52,11 +52,11 @@ export TERM=xterm-256color
 # source ~/gruvbox_powerline.sh # powerline
 
 # :: starship shell prompt ::
-# eval "$(starship init bash)"
+eval "$(starship init bash)"
 # export STARSHIP_CONFIG=~/.config/starship.toml
 
 # :: oh-my-posh shell prompt
-eval "$(oh-my-posh --init --shell bash --config ~/.config/omp-princess.json)"
+# eval "$(oh-my-posh --init --shell bash --config ~/.config/omp-princess.json)"
 
 # :: tmux ::
 # tmux -f ~/.tmux/tmux.conf
